@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products</title>
+        <link rel="icon" href="assets/logo2.png">
+        <link rel="stylesheet" href="product.css">
+    </head>
+    <body>
+        <header>
+           
+        <img class="product" src="assets/product.png">
+           <div class="search-container">
+
+    <input class="search" id="searchbox" type="text" placeholder="Use Me">
+
+    <span class="search-icon">🔍</span>
+
+    <div class="categories" id="categories">
+        <div>Shirt</div>
+        <div>Short Kurti</div>
+        <div>Shoes</div>
+        <div>Pants</div>
+        <div>Leggings</div>
+    </div>
+
+</div>
+        <img class="logo" src="assets/logo2.png">
+        <div class="move">
+               <marquee><h1>Anili Cart</h1>
+               </marquee>
+            </div>  
+             <div class="topright">
+            <a href="home.html" style="color:rgb(234, 199, 234)">
+                <h1>🏠</h1></a>
+            <a href="cart.html" style="color:rgb(234, 199, 234)">
+                <h1><span class="count" id="cart-count">0</span>🛒</h1>
+            </a>
+            </div> 
+        </header>
+        <main>
+        <h2 class="product-container"></h2>
+        <div class="product-cards" id="productCards">
+            <div class="product-card1">
+                <img class="image1" src="assets/kurti.png">
+                <p> Women  Kurta</p>
+                <h3 class>₹399</h3>
+                <button class="b1" onclick="addToCart(1)">Make It Mine💜</button>
+                <button class="b2" onclick="removeFromCart(1)">Let It Go😖</button>
+            </div>
+            <div class="product-card1">
+                <img class="image1" src="assets/pant.png">
+                <p>Women Pant</p>
+                <h3 class> ₹899</h3>
+                <button class="b1" onclick="addToCart(2)">Make It Mine💜</button>
+                <button class="b2" onclick="removeFromCart(2)">Let It Go😖</button>
+            </div>
+            <div class="product-card1">
+                <img class="image1" src="assets/shirt1.png">
+                <p>Men Shirt</p>
+                <h3 class> ₹799</h3>
+                <button class="b1" onclick="addToCart(3)">Make It Mine💜</button>
+                <button class="b2" onclick="removeFromCart(3)">Let It Go😖</button>
+            </div>
+            <div class="product-card1">
+                <img class="image1" src="assets/shoes.png">
+                <p>Men Shoes</p>
+                <h3 class>₹1999</h3>
+                <button class="b1" onclick="addToCart(4)">Make It Mine💜</button>
+                <button class="b2" onclick="removeFromCart(4)">Let It Go😖</button>
+            </div>
+        
+        <div class="product-card1">
+                <img class="image1" src="assets/kuri3.png">
+                <p> Women Short Kurti</p>
+                <h3 class>₹299</h3>
+                <button class="b1" onclick="addToCart(5)">Make It Mine💜</button>
+                <button class="b2" onclick="removeFromCart(5)">Let It Go😖</button>
+            </div>
+            <div class="product-card1">
+                <img class="image1" src="assets/pant2.png">
+                <p>Women's Pant</p>
+                <h3 class> ₹599</h3>
+                <button class="b1" onclick="addToCart(6)">Make It Mine💜</button>
+                <button class="b2" onclick="removeFromCart(6)">Let It Go😖</button>
+            </div>
+            <div class="product-card1">
+                <img class="image1" src="assets/shirt2.png">
+                <p>Men's Shirt</p>
+                <h3 class>₹999</h3>
+                <button class="b1" onclick="addToCart(7)">Make It Mine💜</button>
+                <button class="b2" onclick="removeFromCart(7)">Let It Go😖</button>
+            </div>
+            <div class="product-card1">
+                <img class="image1" src="assets/shoes2.png">
+                <p>Men's casual Shoes</p>
+                <h3 class> ₹2499</h3>
+                <button class="b1" onclick="addToCart(8)">Make It Mine💜</button>
+                <button class="b2" onclick="removeFromCart(8)">Let It Go😖</button>
+            </div>
+        </div>
+    </main>
+            <script src="script.js"></script>
+    </body>
+</html>

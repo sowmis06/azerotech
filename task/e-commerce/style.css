@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.top{
+    width:100%;
+    overflow:hidden;
+}
+
+
+.logo{
+    position:absolute;
+    z-index: 2;
+    top:25px;
+    left: 105px;
+}
+
+.move{
+    position:absolute;
+    z-index: 2;
+    top:95px;
+    left: 75px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(255, 251, 255);
+    font-size:small;
+}
+
+.topright {
+    position:absolute;
+    z-index: 2;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    top: 55px;
+    left:60%;
+    gap:35px;
+    
+}
+
+
+.sale{
+    position:absolute;
+    z-index: 2;
+    top:30%;
+    left:15%;
+
+}

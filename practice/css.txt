@@ -1,0 +1,143 @@
+                              day-4
+
+CSS - style the web page
+ 
+ types: inline css - can add the style or design in single line
+        internal css - a separate style tag will be used to style the web page
+        external css - it creates a separate file called style.css, we need to link that to html using --> <link rel="stylesheet" href="style.css">
+
+eg: style="colour:red background-color:white" -->inline
+    
+
+internal css:
+eg:
+    <style>
+       h1{
+         }
+   </style>
+
+
+CSS selector:
+        I)element selector- directly giving the tag name in css 
+eg: h1{color:red;} 
+
+        ii)class selector - giving the unquie name to not get confused 
+eg: < h1 classroom="any name"> -- .one{color:red}
+
+        iii)id selector - instead of class we need to write id bt in css instead of "." we need to put "#".
+
+        iv) universal selector - we will use "*" to style the web page
+
+
+CSS box model:
+
+padding top - gap between the text and box will be formed
+padding left - left side of the box will be adjusted
+margin top - gap between the top page and the text
+margin left - left side of the box will be adjusted
+border-color - color of the border
+
+
+CSS display property
+
+I)block - it will cover the entire page in block
+ii) inline - it will cover only the txt
+iii) inline-block --> we can adjust the txt block according to the our wish with width and height
+
+
+CSS position: using this we can place the txt in position
+
+static: it will be in default we cant change the place
+
+relative: use left and right to change the position,only that txt will move.
+
+absolute: entire scr la iruthu pixel will be calculated
+
+fixed: txt mela txt
+
+sticky: still it reach pixel value it will be sticky once reached it will become fixed
+
+z-index:
+     it used for prority and by greater num
+
+
+   
+
+                     DAY-6
+
+
+flexbox:
+        display:flex
+ flex-direction : row or column --> as we need 
+ flex-wrap : it will wrap the content into a box
+ justify-content: helps to give space
+
+
+
+
+
+                    DAY-7
+
+grid:
+  grid container: a box contains all grid items
+  grid items : box inside the grid container
+  grid area:unique selected items are grid area
+
+inline-grid: same as inline-block
+
+grid-template-columns: 10px 10px 10px or (3,10px) or 1fr(fraction) ---> 3 columns will be created adjust with px size,
+minmax(min px or fr,max px or fr) 
+
+grid-template-rows:same as column
+
+height: give height for grid
+
+
+[ grid template: row size / column size ]    ----> in single line
+
+
+GAP : gap between the row and column
+
+row-gap: gap in rows
+column-gap: gap in column
+
+common for(row-gap,column-gap): gap: row px column px
+
+justify-items: horizontal axis align (start, center, end)
+align-items: vertical axis align (start,center, end)
+
+common for (justify-items,align-items) --->place-items:justify-items  align-items
+
+justify-content: moves entire container row wise
+align-content: moves entire container column wise
+
+common for these both-----> place-content
+
+
+
+                    
+
+  
+                            day-8
+media query:
+ max-width:(600px or 900px)
+ min-width:(900px or 600px)
+
+
+
+
+                            day-9
+
+transition: time taken to do the transition
+transform: to move the object or content(translateX or translateY or translateZ)
+rotate: rotateX(360deg) or rotateY(360deg) or rotateZ(360deg)
+scale: the obj will become wide scaleX,y or Z(any num)
+skew: tilt skewX or skewY(30deg)
+
+
+
+
+ 
+
+
+

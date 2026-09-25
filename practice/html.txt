@@ -1,0 +1,80 @@
+day-1
+building block og web page
+structure of HTML :
+
+to start html - <!DOCTYPE html>
+<body>- content of the page
+<head>- inside title of the web page can be updated 
+<title> - title for the web page
+ close the tag with "/" -> </html>
+
+tags:
+<h1> - big font
+<h6>- smallest font
+
+paragraph tag:
+
+<p> -> this refers to paragraph
+
+Anchor tag:
+<A> tag should be inside the body tag
+<a> -> it will move from one page to another page
+href - link to be given to move for next page
+
+eg: <a href="link to move nxt page"> hello </a>
+
+comment tag:
+<!-- comment -->
+
+image tag:
+<img scr="location of the image"> -->no closing tag
+use alternative and width when the image is not visible
+
+eg:<img src="wednesday.jpg" alt="Wednesday" width="300">
+
+center tag:
+
+make the content in center --> <center> </center>
+
+
+<marquee>- to move the object (direction:left,right ,up or down)(scrollamount="any num")-->time taken to scroll(height="")(bgcolor="#0f0f0")
+
+list:
+   2 types:
+      i) ordered list --><ol> 
+                            <li> </li>  </ol>
+     ii) unordered list --> <ul>
+                              <li>  </li>  </ul>
+Table tag
+
+<table border="1">
+row means --> <tr>
+add data means --> <td> --> Table column or data
+border ="1"    ---> border for table 
+
+note: without <html> <body> also work because browser automatically add it 
+
+Form Tag
+
+<form> --->  It will create the form 
+<input> -->  It will create the input box 
+Name : <input type="text" >  ---> it defines the which type of data user need enter
+
+inside input tag we can also did 
+placeholder="value"
+
+Drop down Tag
+
+<select>
+<option>---> data
+
+lable tag --> it defines name of the input box 
+
+<label for="name">Name:</label>
+<input type="text" id="name"> --> it defines the id means display the previous data
+
+
+<table cellpadding="8">
+cellpadding adds space inside each table cell.
+whenever you want space in between table add this and also change the size also..
+

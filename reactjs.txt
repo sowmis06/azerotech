@@ -1,0 +1,62 @@
+                    REACT JS
+
+react is a library and angular is same as react bt angular is a framework
+
+to enchance the Facebook home page react was build and in future it become open source
+
+react js and react native is different 
+
+reactjs component is angular
+
+react native component is flutter
+
+virtual DOM : it creates a virtual dom and compare with actual DOM and make the changes
+
+SPA : Single Page Application ---> single page contains 2 components without reloading the page
+
+
+
+
+day-21
+
+
+Commands used
+Install node js
+node --version
+npm create vite@latest
+cd your-project-name
+npm install
+npm run dev
+
+
+
+reactjs will not accept class instead className
+
+
+componentS: jsx file are called components
+
+props: it is used to create a duplicate values easily without copy pasting the same content.....instead enter the component name in the main.jsx 
+
+the need content can be entered in app.jsx and in the component we can create a props and inside tags eg;--->   <h3>{props.name}</h3>
+
+
+
+props:   Props = information/data passed from a parent component to a child component.
+
+default props :
+eg:
+   course.defaultProps = {
+              image: HTML
+     }
+
+
+
+HOOKS:   usestate ---> it is used in functional components for functional state
+
+use effects --> 
+
+use context --> it is used to split the large amount of data into small ones for easy search
+
+use reducer --> make the complex thing into easy one
+
+ use memo -->

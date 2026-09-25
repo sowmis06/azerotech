@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.runner-orbit {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: orbit 8s linear infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.runner {
+  position: absolute;
+  top: -24px;
+  left: 35%;
+  transform: translateX(-50%);
+  font-size: 42px;
+  animation: runner-spin 3s linear infinite;
+}
+
+@keyframes orbit {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes runner-spin {
+  from {
+    transform: translateX(-80%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(-80%) rotate(-360deg);
+  }
+}

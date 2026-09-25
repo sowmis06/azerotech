@@ -1,0 +1,35 @@
+<!--DOM-->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 id="title">Happy😄</h1>
+        <button onclick ="Next()">Next</button> <br> <br>
+        <input id="num1" type="number" placeholder="Enter a num">
+        <input id="num2" type="number" placeholder="Enter a num">
+        <button onclick ="sum()">total</button>
+        <p id="result"></p>
+
+
+    <!--JS-->
+        <script>
+            let world = document.getElementById("title")
+            console.log(world);
+            
+
+            function Next(){
+               world.textContent = "Sad😣"
+            }
+
+            function sum(){
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            let total =num1 + num2;
+            document.getElementById("result").innerHTML = "Result: " + total;
+            }
+
+        </script>
+
+    </body>
+</html>
+

@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.product{
+    position:relative;
+    z-index:1;
+}
+.topright {
+    position:absolute;
+    z-index: 2;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    top: 55px;
+    left:80%;
+    gap:55px;
+}

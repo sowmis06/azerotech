@@ -1,0 +1,36 @@
+.wed{
+    text-align:justify;
+    line-height:1.2;
+    width:20%;
+    margin:auto;
+    background-color:rgba(19, 3, 52, 0.989);
+    display:inline-block;
+    color:aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    position:absolute;
+    z-index: 2;
+    top: 220px;
+    left: 325px;
+}
+div{
+        background-color:rgb(12, 0, 0);
+        width: 650px;
+        height:420px;
+        display:inline-block;
+        margin-left: 50px;
+        position: relative;
+        border-color:darkslategrey;
+        border-style:dashed ;
+        border-width: 15px;
+
+    }
+ .image{
+    position:absolute;
+    z-index: 1;
+    top: 50px;
+    left: 100px;
+    display:inline-block
+ }   

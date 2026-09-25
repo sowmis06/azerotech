@@ -1,0 +1,224 @@
+day-1
+
+-> js is a case sentitive
+-> need node.js to run the js (to run code cmd- "node filename.js")
+
+variables:
+    for printing- console.log()
+    variables declared in 3 ways:
+           
+               I) using var - used for function scope or      global scope. can be accessed even from the outside of the block.
+                  eg: var x=10
+                      {
+                          var y=10  }
+                      console.log(y)
+    
+              ii) using let - let can only be used inside the block.
+                  eg: { let x=2;}
+
+             iii) using const - in const once u assigned a value it cant be changed again
+                eg: const a=20
+                      a=30 (error)
+
+keywords: per defined variables
+
+comments : single comments - //
+           double line comments - /* */
+
+operators: increment & decrement 
+ 
+          post increment(a++)& decrement(a--)- when a variable see the same variable again it will get increased
+    
+          eg: var a=10              
+              var b=a++ 
+              console.log(b) -> o/p- 10
+              console.log(a) -> o/p-11
+
+          pre increment(--a) & decrement(--a)- the variable doesn't need a same variable to incre or decre.
+ 
+          eg: var a=10
+              var b=++a
+              console.log(b) ->o/p -11
+data types:
+           "console.log(typeof(""))"
+
+           eg: console.log(typeof(10)) -> integer
+       
+           i) primitive datatype - num,string,boolean,null, undefined
+          ii) non-primitive datatype - object,array
+
+js function:
+         
+need node.js to run the js (to run code cmd- "node filename.js")
+
+      eg: function xyz()
+         {
+            console.log("Sowmi")
+         }
+       xyz()
+
+return function:
+
+      it will return the value inside the function
+
+      eg: function myname()
+         {
+            return "Sowmi"
+         }
+       var a= myname()
+       console.log(a)
+
+if-else function:
+  
+         if(condition){
+           //true condition
+          }else{
+           //false condition
+          }
+         
+logical AND(&&) and logical OR(||) :
+
+                logical and - if there is any one FALSE entire statement is false
+ 
+                logical or - if there is any one TRUE entire statement is true   
+
+logical NOT :
+            if the statement is true is will change  into false
+
+
+nested if-else:
+       if{
+          }
+        else if{}
+         else{}               
+       
+for loop:
+       syntax: for(initial,condition, iteration)
+
+
+
+
+
+                                                                    day-11
+
+document.write() --> to get 
+
+
+
+
+
+                         day-12
+
+
+
+arrow function: it is another way of creating function declaration
+
+ syntax -->  let functionName = (parameters) => {
+                                              //code   }
+
+
+eg:  const add = (a, b) => {  //code }   
+ 
+                        or  
+
+if there is only one statement u can remove {} and return
+
+
+switch case: one or more code blocks to be executed.
+
+
+alternative for if else
+
+
+loop:
+ 
+for loop: use when, how many times you want to repeat something
+
+syntax:
+
+for (starting; condition; update) {
+    // code
+}
+
+
+
+while loop: Use a while loop when you want to keep repeating something as long as a condition is true.
+
+syntax:    
+
+while (condition) {
+        //code
+}
+
+
+
+                     Day-13
+
+Array basics:  it stores multiple values in single variable
+
+indexing : starts from 0
+
+push()- used to push the value at last
+pop()- used to delete the value at last
+unshift() --> values addes at first
+shift() --> removes the first value
+
+splice() --> replace the value
+eg:          
+names.splice(1,1,"ismail"); --->(start index,number of items to be removed, adding items)
+
+
+for each: a simpler way to loop through array
+
+
+
+                   day-14
+
+Array 
+
+map: change every item ==> map = take every item --> do something --> create a new array
+
+
+filter: it selects the item that satisfy the condition
+
+eg:     prod          → whole object
+        prod.name     → product name
+        prod.price    → product price
+
+reduce : it finds the total value
+
+find(): is used to find the first item that matches a condition
+
+
+some(): Is there AT LEAST ONE item that satisfies this condition?   it gives me the o/p --> true or false
+
+ every(): Do ALL the items satisfy this condition?
+
+
+
+ 
+                    day-16
+
+
+
+DOM - Document Object Model - tree like object
+
+event: action or occurrence done around browser is called event, like clicking button, moving mouse 
+
+event handler:  a function that responds to an event when it occurs
+
+
+types of event :
+I) onchange    ii) onclick      iii) onmouseover
+iv) onmouseout      v) onkeydown  vi) onload
+
+
+
+
+
+                  DOM
+
+math.random() --> it will show random number from 0.0 to 0.9
+
+math.floor() --> it will show the round off num
+

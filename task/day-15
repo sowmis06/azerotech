@@ -1,0 +1,54 @@
+//Contact Book
+let contacts = [
+    {
+        name: "Anlian",
+        contact: 9843764764,
+        email: "ani@gmail.com"
+    },
+    {
+        name: "Sowmi",
+        contact: 9477437843,
+        email: "sowms@gmail.com"
+
+    },
+    {
+        name: "Resh",
+        contact: 7486785455,
+        email: "resh@gmail.com"
+    }
+];
+console.log(contacts[0].name);
+console.log(contacts[0].email);
+console.log(contacts[1]);
+
+//foreach
+contacts.forEach(function(person){
+    console.log("Name:",person.name);
+    console.log("Contact:",person.contact);
+    console.log("Email:",person.email);
+    console.log("---------------------");
+});
+
+//filter
+let searchName = "Sowmi";
+let result = contacts.filter(function(person){
+    return person.name === searchName
+});
+console.log(result);
+console.log(result[0].email);
+
+//key & values
+let person = contacts[0];
+console.log(Object.keys(person));
+console.log(Object.values(person));
+
+//length
+if(result.length > 0){
+    console.log("Contact Found");
+    console.log("Name: ",result[0].name);
+    console.log("Contact ",result[0].contact);
+    console.log("Email: ",result[0].email);
+}
+else{
+    console.log("Contact not found ");
+}

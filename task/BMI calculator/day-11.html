@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI </title>
+        <link rel="icon" href="calculator-solid.png"
+    </head>
+    <body>
+        <div class="BMI">
+        <center><h1>BMI Calculator📟</h1></center>
+        </div>
+        <link rel="stylesheet" href="day-11.css">
+        <center><form>
+            <table cellpadding="6">
+            <!--age -->
+            <main>
+            <tr>
+                <td>
+                <label for="birthdate">BirthDate :</label> 
+                </td>
+                <td>
+                <input type="number" id="birthdate" placeholder="Enter ur birth year">
+                </td>
+                  <br><br>
+                </tr>
+                <tr>
+                    <td>
+                <label for="currentdate">CurrentDate :</label>
+                </td>
+                <td> 
+                <input type="number" id="currentdate" placeholder="Enter Current year">
+                </td>
+                    <br><br>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td>
+                    <button type="button" onclick="calculateAge()">
+                        Calculate Age
+                    </button>
+                    <p id="result"></p>
+                    </td>
+                </tr>
+                </main>
+
+
+
+            <!--BMI -->
+            <aside>
+            <tr>
+                <td>
+            <label for="weight">Ur Weight :</label> 
+            </td>
+            <td>
+            <input type="number" id="weight" placeholder="Enter ur weight">
+            </td>
+            <br><br>
+            </tr>
+
+            <tr>
+                <td>
+            <label for="height">Ur Height :</label> 
+            </td>
+            <td>
+            <input type="number" id="height" placeholder="Enter ur height">
+            </td>
+            <br><br>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+            <button type="button" onclick="calculateBMI()">
+                        Calculate BMI
+            </button>
+            <p id="BMIresult"></p>
+            </td>
+            </tr>
+            </aside>
+        </table>
+        </form></center>
+    <script src="day-11.js"></script>    
+    </body>
+</html>
