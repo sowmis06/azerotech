@@ -1,0 +1,138 @@
+React — 30 Common Bugs
+
+
+1) Component not defined — Using a component that hasn't been created or imported.
+
+2) Wrong import path — Importing a file from the wrong folder or location.
+
+3)Wrong component name/case — Component names are case-sensitive, so ProductCard and Productcard are different.
+
+4)Missing export default — Trying to default-import a component that wasn't exported as default.
+
+5)Props not passed correctly — The parent doesn't send the data the child component expects.
+
+6)Props name mismatch — The parent and child use different names for the same prop.
+7)State not updating — Changing state directly instead of using its setter prevents React from updating correctly.
+
+8-Wrong useState usage — Using useState incorrectly or destructuring its returned values incorrectly.
+
+9-Infinite useEffect loop — An effect repeatedly updates state and triggers itself again.
+
+10-Missing useEffect dependency — Forgetting a value in the dependency array can make the effect use outdated data.
+
+11-Wrong useEffect dependency — The effect watches the wrong value, so it runs at the wrong time.
+
+12-API request failure — The request cannot successfully communicate with the API.
+
+13-Incorrect API response handling — Your code expects a different data structure than what the API actually returns.
+
+14-List without key — Each item in a React list needs a unique key.
+
+15-Duplicate keys — Two list items have the same key, making it harder for React to track them correctly.
+
+16-Image not displaying — The image URL/path may be incorrect or the image may not exist.
+
+17-Broken route — The URL doesn't match a route defined in your application.
+
+18-React Router error — Routing components such as BrowserRouter, Routes, Route, or Link are used incorrectly.
+
+19-Form submission refreshes page — The browser's default form submission wasn't prevented.
+
+20-Input not accepting values — A controlled input usually needs an onChange handler to update its state.
+
+21-Button doesn't work — The button may be missing a click handler or the handler may contain an error.
+
+22-Click event fires unexpectedly — Calling a function like onClick={handleLogin()} runs it during rendering instead of on click.
+
+23-Conditional rendering bug — Incorrect conditions cause the wrong component/content to appear or disappear.
+
+24-CSS not applying — The stylesheet, class name, selector, or CSS path may be incorrect.
+
+25-class vs className — React JSX normally uses className, not HTML's class.
+
+26-State shared incorrectly — State is stored in the wrong component, making it difficult for related components to access or update.
+
+27-Cart count incorrect — Cart quantity/count logic doesn't correctly reflect the products in the cart.
+
+28-Duplicate products in cart — Adding the same product repeatedly creates unwanted duplicate entries instead of updating its quantity.
+
+29-Search/filter not working — The filtering logic, search value, or comparison may be incorrect.
+
+30-Blank page after error — A runtime error can stop rendering, so check the Browser Console for the actual error.
+
+
+
+
+
+BUGS  → Something in the app behaves incorrectly.
+
+ERRORS → JavaScript/React tells you something went wrong.
+
+404 → Not found
+401 → Not authenticated
+403 → Not allowed
+500 → Server problem
+
+undefined → Value doesn't exist
+null      → Intentionally empty/no value
+
+ReferenceError → "I don't know this variable"
+SyntaxError    → "Your code syntax is wrong"
+TypeError      → "You're using this value incorrectly"
+
+
+
+
+
+
+25 - Errors
+
+1. ReferenceError — JavaScript can't find the variable or function you're trying to use.
+
+2. SyntaxError — Your code has invalid JavaScript syntax, such as a missing bracket or quote.
+
+3. TypeError — You're trying to perform an operation that doesn't work with that value's type.
+
+4. is not defined — You're using a variable or function that hasn't been defined or is out of scope.
+
+5. Cannot read properties of undefined — You're trying to access a property from an undefined value.
+
+6. Cannot read properties of null — You're trying to access a property from a null value.
+
+7. Module not found — React/JavaScript can't find the file or package you're importing.
+
+8. Failed to resolve import — The import path or imported file cannot be correctly located.
+
+9. Element type is invalid — Usually an import/export mismatch causes React to receive an invalid component.
+
+10. Objects are not valid as a React child — You're trying to directly render a JavaScript object in JSX.
+
+11. Each child should have a unique key — A list item is missing a unique key prop.
+
+12. Too many re-renders — Your component keeps updating its state during rendering and creates a render loop.
+
+13. Maximum update depth exceeded — Repeated state/effect updates create an infinite update loop.
+
+14. Invalid hook call — A React Hook is being used in an invalid way or location.
+
+15. Hooks can only be called inside — A Hook is being called outside a React component or custom Hook.
+
+16. Rendered fewer hooks than expected — The component called fewer Hooks than in a previous render, usually because of conditional Hook usage.
+
+17. Rendered more hooks than during previous render — The component called more Hooks than before, usually because Hook calls are conditional.
+
+18. Cannot update a component while rendering another — One component tries to update another component's state while React is rendering.
+
+19. Failed to fetch — The browser couldn't successfully complete the network request.
+
+20. 404 Not Found — The requested URL, API endpoint, or resource doesn't exist.
+
+21. 401 Unauthorized — The request needs valid authentication or credentials.
+
+22. 403 Forbidden — The server understood the request but won't allow access.
+
+23. 500 Internal Server Error — Something went wrong on the server while processing the request.
+
+24. CORS Error — The browser blocks a request because the server hasn't allowed the frontend's origin.
+
+25. Blank page / Runtime Error — A JavaScript or React error stops the app from rendering, so check the Browser Console.

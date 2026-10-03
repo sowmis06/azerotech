@@ -34,7 +34,7 @@ function LoginForm(){
    const validation = useMemo(
         function(){
            return{
-            emailError: email === ""? "Email required" : "",
+            emailError: email === ""? "Email required" : "",   
             passwordError: password ===""? "Password required" : "",
            };
         },[email,password]

@@ -1,0 +1,191 @@
+// import { useState } from "react";
+// import EnergyHeader from "./components/EnergyHeader";
+// import EnergyDisplay from "./components/EnergyDisplay";
+// import EnergyMessage from "./components/EnergyMessage";
+// import EnergyControl from "./components/EnergyControl";
+
+// function App() {
+//   const [energy, setEnergy] = useState(7);
+
+//   const increaseEnergy = () => {
+//     setEnergy((prevEnergy) => Math.min(prevEnergy + 1, 10));
+//   };
+
+//   const decreaseEnergy = () => {
+//     setEnergy((prevEnergy) => Math.max(prevEnergy - 1, 0));
+//   };
+
+//   const resetEnergy = () => {
+//     setEnergy(0);
+//   };
+
+//   return (
+//     <div className="relative min-h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-orange-400/60 via-amber-300/60 to-yellow-300/90 p-4">
+
+//       {/* Background Glow Decorations */}
+
+//       <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-orange-300/30 blur-3xl"></div>
+
+//       <div className="absolute -right-20 top-20 h-72 w-72 rounded-full bg-pink-300/30 blur-3xl"></div>
+
+//       <div className="absolute bottom-0 left-1/3 h-64 w-64 rounded-full bg-yellow-300/30 blur-3xl"></div>
+
+
+//       {/* Flowing Energy Circles */}
+
+//       <div className="pointer-events-none absolute h-[500px] w-[500px] rounded-full border border-white/90"></div>
+
+//       <div className="pointer-events-none absolute h-[620px] w-[620px] rounded-full border border-white/90"></div>
+
+
+      
+//       {/* Floating Decorations */}
+
+//       <div className="absolute left-[12%] top-[18%] text-6xl text-pink-500/70 animate-bounce">
+//         ♡
+//       </div>
+
+//       <div className="absolute right-[20%] top-[15%] text-8xl text-orange-500/80 animate-pulse">
+//         ✦
+//       </div>
+
+//       <div className="absolute left-[15%] top-[60%] text-8xl text-rose-500/70 animate-pulse">
+//         ♥
+//       </div>
+
+//       <div className="absolute right-[15%] top-[55%] text-9xl text-pink-500/70 animate-bounce">
+//         ♡
+//       </div>
+
+//       <div className="absolute left-[65%] bottom-[18%] text-4xl text-yellow-600 animate-pulse">
+//         ✦
+//       </div>
+
+//       <div className="absolute right-[25%] bottom-[25%] text-5xl text-orange-500 animate-bounce">
+//         ♡
+//       </div>
+
+
+      
+//       {/* Energy Particles */}
+     
+
+//       <div className="absolute left-[30%] top-[15%] h-2 w-2 rounded-full bg-white animate-pulse"></div>
+
+//       <div className="absolute right-[30%] top-[25%] h-3 w-3 rounded-full bg-yellow-300 animate-pulse"></div>
+
+//       <div className="absolute left-[20%] bottom-[30%] h-2 w-2 rounded-full bg-pink-300 animate-pulse"></div>
+
+//       <div className="absolute right-[25%] bottom-[20%] h-2 w-2 rounded-full bg-white animate-pulse"></div>
+
+//       {/* Running Person */}
+
+//          <div className="runner-orbit">
+//                <span className="runner">⚽</span>
+//         </div>
+
+
+//       {/* Energy Card */}
+      
+
+//       <div className="relative z-10 w-full max-w-[340px] rounded-3xl bg-emerald-400/20 px-6 py-5 shadow-2xl backdrop-blur-xl border border-white/40">
+
+//         <EnergyHeader />
+
+//         <EnergyDisplay energy={energy} />
+
+//         <EnergyMessage energy={energy} />
+
+//         <EnergyControl
+//           increaseEnergy={increaseEnergy}
+//           decreaseEnergy={decreaseEnergy}
+//           resetEnergy={resetEnergy}
+//         />
+
+//         {/* Footer */}
+
+//         <div className="mt-6 text-center text-sm text-blue-900">
+//           Keep going 🚀
+//         </div>
+
+//       </div>
+
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+// PRATICE HOOKS
+
+// import ImageSection from "./components/ImageSection"
+// import LoginForm from "./components/LoginForm"
+
+// function App(){
+//   return(
+//     <div className="min-h-screen flex items-center justify-center bg-gray-300">
+//       <div className="w-[900px] h-[560px] flex bg-white shadow-5xl ">
+//     <ImageSection/>
+//     <LoginForm/>
+//     </div>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+//Router
+
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Details from "./components/pages/Details";
+import NavBar from "./components/NavBar";
+
+//Router
+function App(){
+  return(
+    <BrowserRouter>
+    <NavBar />
+       <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/details/:id" element={<Details />} />
+       </Routes>
+    </BrowserRouter>
+  );
+}
+export default App;
+
+
+//Router
+
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Details from "./components/pages/Details";
+import NavBar from "./components/NavBar";
+import Feedback from "./components/pages/Feedback";
+
+//Router
+function App(){
+  return(
+    <BrowserRouter>
+    <NavBar />
+       <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/details/:id" element={<Details />} />
+          <Route path="/feedback" element={<Feedback />} />
+       </Routes>
+    </BrowserRouter>
+  );
+}
+export default App;

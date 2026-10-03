@@ -1,0 +1,14 @@
+min-h-screen    → minimum height = screen
+bg-yellow-100   → background color
+flex            → flexbox
+justify-center  → center horizontally
+items-center    → center vertically
+bg-white        → white background
+w-full          → full width
+max-w-md        → maximum width
+p-6             → padding
+shadow-xl       → large shadow
+text-3xl        → large text
+font-bold       → bold
+mt-2            → margin-top
+text-gray-500   → gray text

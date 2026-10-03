@@ -59,4 +59,16 @@ use context --> it is used to split the large amount of data into small ones for
 
 use reducer --> make the complex thing into easy one
 
- use memo -->
+ use memo -->is used to remember a calculated value so React doesn’t calculate it again unnecessarily.
+
+
+
+
+
+             forms
+
+forms contains 2 types---> 
+
+controlled--> it will be used when eact wants to controls the components and stores the data
+
+uncontrolled --> DOM will stores the data and react will access when it needs
