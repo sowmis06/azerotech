@@ -72,3 +72,14 @@ forms contains 2 types--->
 controlled--> it will be used when eact wants to controls the components and stores the data
 
 uncontrolled --> DOM will stores the data and react will access when it needs
+
+
+
+
+
+to remove the tags from json:
+
+<div dangerouslySetInnerHTML={{
+                    __html: movie.summary
+                }} /> 
+

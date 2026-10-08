@@ -222,3 +222,30 @@ math.random() --> it will show random number from 0.0 to 0.9
 
 math.floor() --> it will show the round off num
 
+
+
+
+
+
+JSON = JavaScript Object Notation
+
+JSON is simply a format used to store and send data.
+
+it is dynamic 
+
+Because JSON is an easy format for applications to exchange data.
+
+API → provides data to your application.
+
+JSON → common format used to send/store that data.
+
+
+fetch() - The data is being requested. Wait for the response.
+
+async → allows us to use await inside the function
+
+await → waits for fetch() to finish
+
+JSON.parse() = JSON string → JavaScript object
+
+JSON.stringify() = JavaScript object → JSON string
